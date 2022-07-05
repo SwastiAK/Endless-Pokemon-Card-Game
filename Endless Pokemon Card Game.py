@@ -69,4 +69,17 @@ def player1():
 player1_btn = Button(root, image = img, command = player1)
 player1_btn.place(relx = 0.1, rely = 0.6, anchor = CENTER)
 
+player2_score = 0
+def player2():
+    global player2_score
+    random_no = random.randint(0,10)
+    random_pokemon = pokemon_list [random_no]
+    label["image"] = random_pokemon
+    
+    random_power_list = power_list[random_no]
+    player2_score = player2_score + random_power_list
+    
+player2_btn = Button(root, image = img, command = player2)
+player2_btn.place(relx = 0.1, rely = 0.6, anchor = CENTER)
+
 root.mainloop()
