@@ -15,20 +15,21 @@ root.geometry("620x460")
 
 root.configure(background = "orange")
 
-abra = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/abra.jpg"))
-bulbasour = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/bulbasour.jpg"))
-button = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/button.jpg"))
-charmender = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/charmender.jpg"))
-iyvasour = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/Iyvasour.jpg"))
-jigglypuff = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/jigglypuff.jpg"))
-kadabra = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/kadabra.jpg"))
-meowth = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/meowth.jpg"))
-nidoking = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/nidoking.jpg"))
-paras = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/paras.jpg"))
-persion = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/persion.jpg"))
+img = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/button.jpg"))
+
 pikachu = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/pikachu.jpg"))
-ratata = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/ratata.jpg"))
+bulbasour = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/bulbasour.jpg"))
+iyvasour = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/Iyvasour.jpg"))
+charmender = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/charmender.jpg"))
 squirtle = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/squirtle.jpg"))
+ratata = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/ratata.jpg"))
+nidoking = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/nidoking.jpg"))
+jigglypuff = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/jigglypuff.jpg"))
+meowth = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/meowth.jpg"))
+persion = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/persion.jpg"))
+abra = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/abra.jpg"))
+kadabra = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/kadabra.jpg"))
+paras = ImageTk.PhotoImage(Image.open("C:/Users/Swasti/Desktop/Python Projects/Pokemon_Images_students/paras.jpg"))
 
 player1 = Label(root, text = "Player 1", bg = "red", fg = "white")
 player1.place(relx = 0.1, rely = 0.3, anchor = CENTER)
@@ -51,10 +52,6 @@ power_list = [200,60,100,50,50,40,70,60,70,30,70]
 
 label = Label(root)
 label.place(relx = 0.5, rely = 0.5, anchor = CENTER)
-
-pokemon_list = [pokemon]
-power_list = [200]
-label["image"] = random_pokemon
 
 player1_score = 0
 def player1():
