@@ -62,6 +62,7 @@ def player1():
     
     random_power_list = power_list[random_no]
     player1_score = player1_score + random_power_list
+    player_1_score_label["text"] = str(player1_score)
     
 player1_btn = Button(root, image = img, command = player1)
 player1_btn.place(relx = 0.1, rely = 0.6, anchor = CENTER)
@@ -75,8 +76,9 @@ def player2():
     
     random_power_list = power_list[random_no]
     player2_score = player2_score + random_power_list
+    player_2_score_label["text"] = str(player2_score)
     
 player2_btn = Button(root, image = img, command = player2)
-player2_btn.place(relx = 0.1, rely = 0.6, anchor = CENTER)
+player2_btn.place(relx = 0.9, rely = 0.6, anchor = CENTER)
 
 root.mainloop()
